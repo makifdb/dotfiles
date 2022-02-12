@@ -4,6 +4,7 @@ mkdir -p ~/.dotfiles
 git clone https://github.com/makifdb/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 
+sudo pacman -Syuu
 sudo pacman -S base-devel alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat
 
 # env WINIT_UNIX_BACKEND=x11 alacritty
