@@ -5,11 +5,11 @@ git clone https://github.com/makifdb/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 
 sudo pacman -Syuu
-sudo pacman -S base-devel alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat
+sudo pacman --noconfirm -S base-devel alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat
 
 # env WINIT_UNIX_BACKEND=x11 alacritty
 
-yay -S lenopow jump visual-studio-code-bin rustup github-desktop-bin
+yay --save --answerclean All --answerdiff All -S lenopow jump visual-studio-code-bin rustup github-desktop-bin
 
 # create config folders
 mkdir -p ~/.config/alacritty
