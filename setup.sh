@@ -2,7 +2,7 @@
 
 mkdir -p ~/.dotfiles
 git clone https://github.com/makifdb/dotfiles ~/.dotfiles
-cd ~/.dotfiles
+cd ~/.dotfiles || exit
 
 sudo pacman --noconfirm -Syuu
 sudo pacman --noconfirm -S base-devel alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat
@@ -18,17 +18,17 @@ mkdir -p ~/.config/fish/functions
 mkdir -p ~/.config/Code/User
 
 # sync config files
-[ -f ~/.gitconfig ] || ln -s $(PWD)/gitconfig ~/.gitconfig
-[ -f ~/.nanorc ] || ln -s $(PWD)/nanorc ~/.nanorc
-[ -f ~/.config/alacritty/alacritty.yml ] || ln -s $(PWD)/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-[ -f ~/.config/Code/User/settings.json ] || ln -s $(PWD)/config/Code/User/settings.json ~/.config/Code/User/settings.json
-[ -f ~/.config/fish/config.fish ] || ln -s $(PWD)/config/fish/config.fish ~/.config/fish/config.fish
-[ -d ~/.config/fish/functions/ ] || ln -s $(PWD)/config/fish/functions ~/.config/fish/functions
+[ -f ~/.gitconfig ] || ln -s "$(PWD)/gitconfig" ~/.gitconfig
+[ -f ~/.nanorc ] || ln -s "$(PWD)/nanorc" ~/.nanorc
+[ -f ~/.config/alacritty/alacritty.yml ] || ln -s "$(PWD)/config/alacritty/alacritty.yml" ~/.config/alacritty/alacritty.yml
+[ -f ~/.config/Code/User/settings.json ] || ln -s "$(PWD)/config/Code/User/settings.json" ~/.config/Code/User/settings.json
+[ -f ~/.config/fish/config.fish ] || ln -s "$(PWD)/config/fish/config.fish" ~/.config/fish/config.fish
+[ -d ~/.config/fish/functions/ ] || ln -s "$(PWD)/config/fish/functions" ~/.config/fish/functions
 
 # .gitconfig
 
 # Default shell setting to fish
-chsh -s $(which fish)
+chsh -s "$(which fish)"
 printf "My current shell - %s\n" "$SHELL"
 
 # fish settings
