@@ -9,7 +9,7 @@ sudo pacman --noconfirm -S base-devel alacritty yay fish go vlc gnome-boxes libr
 
 # env WINIT_UNIX_BACKEND=x11 alacritty
 
-yay --save --answerclean All --answerdiff All -S lenopow jump visual-studio-code-bin rustup github-desktop-bin
+yay --save --answerclean All --answerdiff All --noconfirm -S lenopow jump visual-studio-code-bin rustup github-desktop-bin
 
 # create config folders
 mkdir -p ~/.config/alacritty
