@@ -32,14 +32,13 @@ chsh -s $(which fish)
 printf "My current shell - %s\n" "$SHELL"
 
 # fish settings
-fish_update_completions 
+gnome-terminal --tab --title="fish" --command="fish -c 'fish_update_completions'"
 
 # remove and clear zsh
 sudo pacman --noconfirm -Rscn zsh
 sudo rm -rf ~/.zcompdump ~/.zhistory ~/.zshrc
 
 # Rust install and configure
-rustup install stable
-rustup default stable
+gnome-terminal --tab --title="rustup" --command="bash -c 'rustup install stable; rustup default stable'"
 
 sudo nano /etc/pacman.conf # Color property
