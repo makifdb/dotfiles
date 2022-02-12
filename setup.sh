@@ -35,7 +35,7 @@ printf "My current shell - %s\n" "$SHELL"
 fish_update_completions 
 
 # remove and clear zsh
-sudo pacman -Rscn zsh
+sudo pacman --noconfirm -Rscn zsh
 sudo rm -rf ~/.zcompdump ~/.zhistory ~/.zshrc
 
 # Rust install and configure
