@@ -1,0 +1,6 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 1,
+    "editor.bracketPairColorization.enabled": true,
+    "files.autoSave": "afterDelay"
+}

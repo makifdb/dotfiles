@@ -1,0 +1,7 @@
+[user]
+	name = Mehmet Akif Duba
+	email = mail@makifdb.com
+[color]
+	ui = auto
+[init]
+	defaultBranch = main
