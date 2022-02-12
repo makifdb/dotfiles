@@ -2,7 +2,7 @@
 
 mkdir -p ~/.dotfiles
 git clone https://github.com/makifdb/dotfiles ~/.dotfiles
-.  ~/.dotfiles/setup.sh
+cd ~/.dotfiles
 
 sudo pacman -S base-devel alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat
 
