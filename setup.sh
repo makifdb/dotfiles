@@ -41,4 +41,5 @@ sudo rm -rf ~/.zcompdump ~/.zhistory ~/.zshrc
 # Rust install and configure
 gnome-terminal --tab --title="rustup" -- bash -c 'rustup install stable; rustup default stable'
 
-sudo nano /etc/pacman.conf # Color property
+# Pacman color property
+sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
