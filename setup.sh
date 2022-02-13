@@ -27,6 +27,8 @@ mkdir -p ~/.config/Code/User
 
 # .gitconfig
 
+shopt -s expand_aliases
+
 # Default shell setting to fish
 chsh -s "$(which fish)"
 printf "My current shell - %s\n" "$SHELL"
