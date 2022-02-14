@@ -462,11 +462,18 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-shell:
-  program: /usr/bin/fish
+#shell:
+#  program: /usr/bin/fish
 #  args:
 #    - --login
-
+shell:
+  program: /usr/bin/tmux
+  args:
+    - new-session
+    - -A
+    - -D
+    - -s
+    - main
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working

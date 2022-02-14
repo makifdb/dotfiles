@@ -19,6 +19,7 @@ mkdir -p ~/.config/Code/User
 
 # sync config files
 [ -f ~/.gitconfig ] || ln -s "$(PWD)/gitconfig" ~/.gitconfig
+[ -f ~/.nanorc ] || ln -s "$(PWD)/tmux.conf" ~/.tmux.conf
 [ -f ~/.nanorc ] || ln -s "$(PWD)/nanorc" ~/.nanorc
 [ -f ~/.config/alacritty/alacritty.yml ] || ln -s "$(PWD)/config/alacritty/alacritty.yml" ~/.config/alacritty/alacritty.yml
 [ -f ~/.config/Code/User/settings.json ] || ln -s "$(PWD)/config/Code/User/settings.json" ~/.config/Code/User/settings.json
