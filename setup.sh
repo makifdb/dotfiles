@@ -18,13 +18,13 @@ mkdir -p ~/.config/fish/functions
 mkdir -p ~/.config/Code/User
 
 # sync config files
-[ -f ~/.gitconfig ] || ln -s "$(PWD)/gitconfig" ~/.gitconfig
-[ -f ~/.tmux.conf ] || ln -s "$(PWD)/tmux.conf" ~/.tmux.conf
-[ -f ~/.nanorc ] || ln -s "$(PWD)/nanorc" ~/.nanorc
-[ -f ~/.config/alacritty/alacritty.yml ] || ln -s "$(PWD)/config/alacritty/alacritty.yml" ~/.config/alacritty/alacritty.yml
-[ -f ~/.config/Code/User/settings.json ] || ln -s "$(PWD)/config/Code/User/settings.json" ~/.config/Code/User/settings.json
-[ -f ~/.config/fish/config.fish ] || ln -s "$(PWD)/config/fish/config.fish" ~/.config/fish/config.fish
-[ -d ~/.config/fish/functions/ ] || ln -s "$(PWD)/config/fish/functions" ~/.config/fish/functions
+[ -f ~/.gitconfig ] || ln -s $(pwd)/gitconfig ~/.gitconfig
+[ -f ~/.tmux.conf ] || ln -s $(pwd)/tmux.conf ~/.tmux.conf
+[ -f ~/.nanorc ] || ln -s $(pwd)/nanorc ~/.nanorc
+[ -f ~/.config/alacritty/alacritty.yml ] || ln -s $(pwd)/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+[ -f ~/.config/Code/User/settings.json ] || ln -s $(pwd)/config/Code/User/settings.json ~/.config/Code/User/settings.json
+[ -f ~/.config/fish/config.fish ] || ln -s $(pwd)/config/fish/config.fish ~/.config/fish/config.fish
+[ -d ~/.config/fish/functions/ ] || ln -s $(pwd)/config/fish/functions ~/.config/fish/functions
 
 # .gitconfig
 
