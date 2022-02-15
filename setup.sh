@@ -6,7 +6,7 @@ cd ~/.dotfiles || exit
 
 sudo pacman --noconfirm -Syuu
 
-sudo pacman --noconfirm -S make alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat telegram-desktop steam-manjaro htop tmux nvim discord
+sudo pacman --noconfirm -S make alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat telegram-desktop steam-manjaro htop tmux nvim discord docker
 
 # env WINIT_UNIX_BACKEND=x11 alacritty
 
