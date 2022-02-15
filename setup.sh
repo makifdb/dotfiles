@@ -5,8 +5,12 @@ git clone https://github.com/makifdb/dotfiles ~/.dotfiles
 cd ~/.dotfiles || exit
 
 sudo pacman --noconfirm -Syuu
+<<<<<<< HEAD
 
 sudo pacman --noconfirm -S make alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat telegram-desktop steam-manjaro htop tmux nvim tmux discord
+=======
+sudo pacman --noconfirm -S make alacritty yay fish go vlc gnome-boxes libreoffice-fresh bat telegram-desktop steam-manjaro htop tmux
+>>>>>>> 5cd5f0571a3ce110a9dd86501ca27fc7e22f8028
 
 # env WINIT_UNIX_BACKEND=x11 alacritty
 
