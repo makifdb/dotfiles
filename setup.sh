@@ -51,5 +51,11 @@ sudo rm -rf ~/.zcompdump ~/.zhistory ~/.zshrc
 # Rust install and configure
 gnome-terminal --tab --title="rustup" -- bash -c 'rustup install stable; rustup default stable'
 
+# Start and Enable Docker Servies
+sudo systemctl enable --now docker
+sudo usermod -aG docker $USER
+
 # Pacman color property
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
+
+# reboot
