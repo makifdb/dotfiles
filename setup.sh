@@ -10,11 +10,8 @@ if [ ! -f /var/run/resume-after-reboot ]; then
   git clone https://github.com/makifdb/dotfiles ~/.dotfiles
   cd ~/.dotfiles || exit
   
-  echo "update"
   . ./scripts/update.sh
-  echo "install"
   . ./scripts/install_packages.sh
-  echo "synce"
   . ./scripts/synce_configs.sh
 
   # Preparation for reboot
@@ -27,7 +24,7 @@ if [ ! -f /var/run/resume-after-reboot ]; then
   sudo touch /var/run/resume-after-reboot
   
   echo "rebooting..."
-  #reboot
+  reboot
 
 else 
   echo "Installation Continues"
@@ -42,6 +39,6 @@ else
   . ./scripts/after_reboot.sh
 
   echo "rebooting..."
-  #reboot
+  reboot
 
 fi
