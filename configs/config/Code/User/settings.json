@@ -2,5 +2,6 @@
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 1,
     "editor.bracketPairColorization.enabled": true,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme"
 }
