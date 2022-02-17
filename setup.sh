@@ -4,15 +4,18 @@
 # We created this file before rebooting.
 if [ ! -f /var/run/resume-after-reboot ]; then
   echo "Install Started"
-  
+ 
   # Create main folder and git clone
   mkdir -p ~/.dotfiles
   git clone https://github.com/makifdb/dotfiles ~/.dotfiles
   cd ~/.dotfiles || exit
-
-  . /scripts/update.sh
-  . /scripts/install_packages.sh
-  . /scripts/synce_configs.sh
+  
+  echo "update"
+  . ./scripts/update.sh
+  echo "install"
+  . ./scripts/install_packages.sh
+  echo "synce"
+  . ./scripts/synce_configs.sh
 
   # Preparation for reboot
   script="bash ~/.dotfiles/setup.sh"
@@ -24,7 +27,7 @@ if [ ! -f /var/run/resume-after-reboot ]; then
   sudo touch /var/run/resume-after-reboot
   
   echo "rebooting..."
-  reboot
+  #reboot
 
 else 
   echo "Installation Continues"
@@ -36,9 +39,9 @@ else
   sudo rm -f /var/run/resume-after-reboot
 
   # continue with rest of the script
-  . /scripts/after_reboot.sh
+  . ./scripts/after_reboot.sh
 
   echo "rebooting..."
-  reboot
+  #reboot
 
 fi
