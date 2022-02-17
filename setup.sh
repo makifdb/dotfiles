@@ -3,7 +3,7 @@
 # check if the reboot flag file exists. 
 # We created this file before rebooting.
 if [ ! -f /var/run/resume-after-reboot ]; then
-  echo"Install Started"
+  echo "Install Started"
   
   # Create main folder and git clone
   mkdir -p ~/.dotfiles
