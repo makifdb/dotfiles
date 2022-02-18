@@ -18,7 +18,7 @@ if [ ! -f /var/run/resume-after-reboot ]; then
   script="bash ~/.dotfiles/setup.sh"
   
   # set default shell to bash
-  chsh -s "$(which bash)"
+  chsh -s /bin/bash
   
   # add this script to bashrc so it gets triggered immediately after reboot
   echo "$script" >> ~/.bashrc 
