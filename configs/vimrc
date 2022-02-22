@@ -67,6 +67,10 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_generate_tags = 1
 
+au filetype go inoremap <buffer> <C-Space> <C-x><C-o>
+
+map <silent> <C-n> :NERDTreeFocus<CR>
+
 noremap <Leader>n :NERDTreeToggle<cr>
 noremap <Leader>f :NERDTreeFind<cr>
 
