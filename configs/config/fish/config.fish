@@ -4,8 +4,9 @@ set -g fish_greeting
 # https://github.com/gsamokovarov/jump
 status --is-interactive; and source (jump shell fish | psub)
 
-# exa
+# alias
 alias ls 'exa'
+alias vim 'nvim'
 
 # git prompt settings
 set -g __fish_git_prompt_show_informative_status 1
