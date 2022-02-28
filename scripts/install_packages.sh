@@ -1,7 +1,7 @@
 #!/bin/bash
 
-packages="$(pwd)/scripts/packages/packages.list"
-aur_packages="$(pwd)/scripts/packages/aur_packages.list"
+packages="$(pwd)/packages/packages.list"
+aur_packages="$(pwd)/packages/aur_packages.list"
 
 while IFS= read -r line
 do
