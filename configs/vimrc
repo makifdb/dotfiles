@@ -49,6 +49,7 @@ hi Normal ctermbg=NONE guibg=NONE
 
 autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2
 
 autocmd BufNewFile,BufRead *.md setlocal noet ts=4 sw=4
 autocmd BufNewFile,BufRead *.sh setlocal expandtab shiftwidth=2 tabstop=2
