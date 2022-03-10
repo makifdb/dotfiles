@@ -2,5 +2,12 @@
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 1,
     "editor.bracketPairColorization.enabled": true,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "go.toolsManagement.autoUpdate": true
 }
