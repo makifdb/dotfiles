@@ -1,6 +1,10 @@
 # don't show any greetings
 set -g fish_greeting
 
+set -gxp PATH /usr/local/opt/python@3.9/libexec/bin /usr/local/sbin $HOME/go/bin
+set -gx GOBIN $HOME/go/bin
+set -gx EDITOR vim
+
 # https://github.com/gsamokovarov/jump
 status --is-interactive; and source (jump shell fish | psub)
 
