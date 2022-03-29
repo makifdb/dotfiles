@@ -11,5 +11,6 @@
     },
     "go.toolsManagement.autoUpdate": true,
     "editor.inlineSuggest.enabled": true,
-    "workbench.colorTheme": "United Ubuntu"
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.fontSize": 16
 }
