@@ -10,5 +10,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "go.toolsManagement.autoUpdate": true,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "workbench.colorTheme": "United Ubuntu"
 }
