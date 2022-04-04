@@ -1,6 +1,5 @@
 {
     "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 1,
     "editor.bracketPairColorization.enabled": true,
     "workbench.iconTheme": "gruvbox-material-icon-theme",
     "[javascript]": {
@@ -13,5 +12,6 @@
     "editor.inlineSuggest.enabled": true,
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "editor.fontSize": 16,
-    "editor.fontFamily": "Hack"
+    "editor.fontFamily": "Hack",
+    "window.zoomLevel": 1
 }
