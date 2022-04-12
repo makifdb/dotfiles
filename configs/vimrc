@@ -44,6 +44,10 @@ set backspace=indent,eol,start
 set noshowmatch
 set noshowmode
 
+" All folds open when opening a file
+set foldmethod=indent
+set foldlevelstart=20
+
 syntax enable
 colorscheme gruvbox
 hi Normal ctermbg=NONE guibg=NONE
