@@ -21,7 +21,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tyru/open-browser.vim'
 Plug 'dag/vim-fish'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'github/copilot.vim'
 call plug#end()
 
 set encoding=utf-8
@@ -30,6 +30,7 @@ set number
 set showcmd
 set noswapfile
 set nobackup
+set nowrap
 set autoread
 set autowrite
 set autoindent
@@ -73,8 +74,6 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_generate_tags = 1
 
-au filetype go inoremap <buffer> <C-Space> <C-x><C-o>
-
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 noremap <Leader>n :NERDTreeToggle<cr>
@@ -87,13 +86,6 @@ let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-
-" Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
@@ -115,4 +107,3 @@ endfunction
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
