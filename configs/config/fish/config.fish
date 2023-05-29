@@ -2,7 +2,9 @@ set -g fish_greeting
 
 set -x LANG en_US.UTF-8
 set -gx GOBIN $HOME/go/bin; set -gx GOPATH $HOME/go; set -gx PATH $GOPATH/bin $PATH 
-set -gx EDITOR vim
+set -gx EDITOR nvim
+set PATH $HOME/.cargo/bin $PATH
+set PATH $HOME/.local/bin $PATH
 
 # https://github.com/gsamokovarov/jump
 status --is-interactive; and source (jump shell fish | psub)
