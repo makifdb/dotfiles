@@ -1,16 +1,39 @@
 [user]
 	name = Mehmet Akif Duba
 	email = mail@makifdb.com
+
 [color]
 	ui = auto
+
 [init]
 	defaultBranch = main
+
 [core]
 	editor = code
+
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+
 [credential]
 	helper = cache
+
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta
+
+[delta]
+  	navigate = true    
+  	light = false      
+  	side-by-side = false # set to false to disable side-by-side diff mode
+	line-numbers = true # set to false to disable line numbers
+
+[merge]
+  	conflictstyle = diff3
+
+[diff]
+  	colorMoved = default
