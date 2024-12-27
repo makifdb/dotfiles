@@ -1,0 +1,10 @@
+theme = GruvboxDark
+shell-integration = fish
+font-family = "JetBrainsMonoNL Nerd Font"
+font-size = 35
+window-padding-x = 15
+window-padding-y = 15
+window-padding-balance = true
+window-height = 22
+window-width = 80
+initial-command = "/opt/homebrew/bin/tmux new-session -A -D -s main"
