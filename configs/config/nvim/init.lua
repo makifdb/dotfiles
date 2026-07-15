@@ -112,6 +112,12 @@ require('lazy').setup({
   -- Commenting
   { 'numToStr/Comment.nvim', opts = {} },
 
+  -- Git diff viewer
+  {
+    'sindrets/diffview.nvim',
+    opts = {},
+  },
+
   -- Fuzzy finder
   {
     'nvim-telescope/telescope.nvim',
@@ -211,7 +217,8 @@ require('telescope').setup {
 pcall(require('telescope').load_extension, 'fzf')
 
 vim.keymap.set('n', '<leader>f', require('telescope.builtin').find_files, { desc = '[F]ind files' })
-vim.keymap.set('n', '<leader>g', require('telescope.builtin').git_status, { desc = '[G]it status' })
+vim.keymap.set('n', '<leader>g', ':DiffviewOpen<CR>', { desc = '[G]it diff view' })
+vim.keymap.set('n', '<leader>gc', ':DiffviewClose<CR>', { desc = '[G]it diff close' })
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = '[E]xplorer' })
 
 -- [[ Diagnostics ]] --
