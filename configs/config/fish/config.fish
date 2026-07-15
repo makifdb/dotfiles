@@ -9,7 +9,9 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 set -g fish_greeting
 
 set -x LANG en_US.UTF-8
+set -gx EDITOR nvim
 set -gx GOBIN $HOME/go/bin; set -gx GOPATH $HOME/go; set -gx PATH $GOPATH/bin $PATH
+fish_add_path $HOME/.local/bin
 
 # git prompt settings
 set -g __fish_git_prompt_show_informative_status 1
