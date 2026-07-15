@@ -9,7 +9,8 @@
 	defaultBranch = main
 
 [core]
-	editor = code
+	editor = nvim
+	excludesfile = ~/.gitignore_global
 
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
@@ -27,10 +28,10 @@
 	diffFilter = delta
 
 [delta]
-  	navigate = true    
-  	light = false      
-  	side-by-side = false # set to false to disable side-by-side diff mode
-	line-numbers = true # set to false to disable line numbers
+  	navigate = true
+  	light = false
+  	side-by-side = false
+	line-numbers = true
 
 [merge]
   	conflictstyle = diff3

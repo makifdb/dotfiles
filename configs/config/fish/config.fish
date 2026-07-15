@@ -1,13 +1,26 @@
+if status is-interactive
+end
+
+# Added by OrbStack
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
 set -g fish_greeting
 
 set -x LANG en_US.UTF-8
-set -gx GOBIN $HOME/go/bin; set -gx GOPATH $HOME/go; set -gx PATH $GOPATH/bin $PATH 
+set -gx GOBIN $HOME/go/bin; set -gx GOPATH $HOME/go; set -gx PATH $GOPATH/bin $PATH
 set -gx EDITOR nvim
-set PATH $HOME/.cargo/bin $PATH
-set PATH $HOME/.local/bin $PATH
+fish_add_path $HOME/.cargo/bin
+fish_add_path $HOME/.local/bin
 
-# https://github.com/gsamokovarov/jump
-status --is-interactive; and source (jump shell fish | psub)
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# Added by Antigravity
+fish_add_path /Users/makifdb/.antigravity/antigravity/bin
+
+# grok
+fish_add_path $HOME/.grok/bin
 
 # git prompt settings
 set -g __fish_git_prompt_show_informative_status 1
