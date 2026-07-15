@@ -220,6 +220,7 @@ vim.keymap.set('n', '<leader>f', require('telescope.builtin').find_files, { desc
 vim.keymap.set('n', '<leader>g', ':DiffviewOpen<CR>', { desc = '[G]it diff view' })
 vim.keymap.set('n', '<leader>gc', ':DiffviewClose<CR>', { desc = '[G]it diff close' })
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = '[E]xplorer' })
+vim.keymap.set('n', '<leader>d', function() require('daily').open_daily() end, { desc = '[D]aily note' })
 
 -- [[ Diagnostics ]] --
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Prev diagnostic' })
