@@ -8,4 +8,3 @@ window-padding-balance = true
 window-height = 45
 window-width = 160
 initial-command = "/opt/homebrew/bin/tmux new-session -A -D -s main"
-keybind = shift+enter=text:\x1b[13;2u
